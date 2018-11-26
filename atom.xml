@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>我的博客</title>
+  <title>Wingban的博客</title>
   
   <subtitle>做个记录，方便回看</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wingban.github.io/"/>
-  <updated>2018-11-20T13:33:46.697Z</updated>
+  <updated>2018-11-22T03:43:18.857Z</updated>
   <id>https://wingban.github.io/</id>
   
   <author>
@@ -21,20 +21,27 @@
     <link href="https://wingban.github.io/2018/11/19/VirMach%E6%90%AD%E5%BB%BASSR%E4%B8%8EBBR/"/>
     <id>https://wingban.github.io/2018/11/19/VirMach搭建SSR与BBR/</id>
     <published>2018-11-19T03:45:34.000Z</published>
-    <updated>2018-11-20T13:33:46.697Z</updated>
+    <updated>2018-11-22T03:43:18.857Z</updated>
     
-    <content type="html"><![CDATA[<p>#来吧</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="来吧"><a href="#来吧" class="headerlink" title="来吧"></a>来吧</h1>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;#来吧&lt;/p&gt;
-
+        &lt;h1 id=&quot;来吧&quot;&gt;&lt;a href=&quot;#来吧&quot; class=&quot;headerlink&quot; title=&quot;来吧&quot;&gt;&lt;/a&gt;来吧&lt;/h1&gt;
       
     
     </summary>
     
+      <category term="网络" scheme="https://wingban.github.io/categories/%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="Shadowsocks" scheme="https://wingban.github.io/tags/Shadowsocks/"/>
+    
+      <category term="vps" scheme="https://wingban.github.io/tags/vps/"/>
+    
+      <category term="Linux" scheme="https://wingban.github.io/tags/Linux/"/>
     
   </entry>
   
@@ -43,7 +50,7 @@
     <link href="https://wingban.github.io/2018/04/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
     <id>https://wingban.github.io/2018/04/30/我的第一篇博客/</id>
     <published>2018-04-30T06:50:14.000Z</published>
-    <updated>2018-11-19T09:02:54.244Z</updated>
+    <updated>2018-11-22T03:15:05.664Z</updated>
     
     <content type="html"><![CDATA[<h1 id="写作（一级标题-）"><a href="#写作（一级标题-）" class="headerlink" title="写作（一级标题 #）"></a>写作（一级标题 #）</h1><h2 id="进入写作（二级标题-）"><a href="#进入写作（二级标题-）" class="headerlink" title="进入写作（二级标题 ##）"></a>进入写作（二级标题 ##）</h2><p>使用 hexo new “WORD”进行新建一个标题名称为WORD的文章，即会在~\source_posts\文件夹下生成一个WORD.md文件，进入文件编辑即可；</p><h2 id="写作格式"><a href="#写作格式" class="headerlink" title="写作格式"></a>写作格式</h2><p>一般文章多为多级目录树状的形式，</p><h3 id="列表的使用（三级标题-）"><a href="#列表的使用（三级标题-）" class="headerlink" title="列表的使用（三级标题 ###）"></a>列表的使用（三级标题 ###）</h3><ul><li>无序列表1（* + -）</li></ul><ul><li>无序列表2</li></ul><ul><li>无序列表3</li></ul><pre><code class="bash">* 无序列表1（* + -）+ 无序列表2- 无序列表3</code></pre><ol><li>有序列表1（数字加点 0~9 .）</li><li>有序列表2</li></ol><pre><code class="bash">1. 有序列表1（数字加点 0~9 .）5. 有序列表2</code></pre>]]></content>
     
@@ -53,6 +60,8 @@
     
     </summary>
     
+    
+      <category term="记录" scheme="https://wingban.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
