@@ -94,14 +94,14 @@
 <meta name="description" content="CentOS安装shadowsocks tips: 想直接动手，请跳到最后 1. 用pip安装：1[root@OffbeatEdible-VM ~]#pip install shadowsocks 如果提示：-bash: pip: command not found, 就是还没有安装pip,则 使用yum进行安装:1[root@OffbeatEdible-VM ~]#yum install pyt">
 <meta name="keywords" content="Shadowsocks,vps,Linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VirMach搭建SSR与BBR">
+<meta property="og:title" content="Cent OS搭建SS与BBR">
 <meta property="og:url" content="https://wingban.github.io/2018/11/19/Cent OS搭建SS与BBR/index.html">
 <meta property="og:site_name" content="Wingban的博客">
 <meta property="og:description" content="CentOS安装shadowsocks tips: 想直接动手，请跳到最后 1. 用pip安装：1[root@OffbeatEdible-VM ~]#pip install shadowsocks 如果提示：-bash: pip: command not found, 就是还没有安装pip,则 使用yum进行安装:1[root@OffbeatEdible-VM ~]#yum install pyt">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-25T02:45:15.343Z">
+<meta property="og:updated_time" content="2019-01-25T02:52:15.507Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="VirMach搭建SSR与BBR">
+<meta name="twitter:title" content="Cent OS搭建SS与BBR">
 <meta name="twitter:description" content="CentOS安装shadowsocks tips: 想直接动手，请跳到最后 1. 用pip安装：1[root@OffbeatEdible-VM ~]#pip install shadowsocks 如果提示：-bash: pip: command not found, 就是还没有安装pip,则 使用yum进行安装:1[root@OffbeatEdible-VM ~]#yum install pyt">
 
 
@@ -138,7 +138,7 @@
 
 
 
-  <title>VirMach搭建SSR与BBR | Wingban的博客</title>
+  <title>Cent OS搭建SS与BBR | Wingban的博客</title>
   
 
 
@@ -316,7 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">VirMach搭建SSR与BBR</h1>
+          <h1 class="post-title" itemprop="name headline">Cent OS搭建SS与BBR</h1>
         
 
         <div class="post-meta">
@@ -382,7 +382,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.4k
+                  1.3k
                 </span>
               
 
@@ -472,7 +472,7 @@
 </li>
 </ul>
 <p>接下来只需要等待安装，也许要几分钟，then:<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Complete!</span><br><span class="line"></span><br><span class="line">Info: The<span class="built_in"> system </span>needs <span class="keyword">to</span> reboot.</span><br><span class="line"><span class="keyword">Do</span> you want <span class="keyword">to</span> restart system? [y/n]</span><br></pre></td></tr></table></figure></p>
-<p><strong>不要回复！不要回复！不要回复！我是指先不要重启，不要重启！极有可能会开不了机</strong></p>
+<p><strong>不要重启！极有可能会开不了机</strong></p>
 <ul>
 <li><p>创建force-vitio_blk-to-ensure-boot.conf</p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> <span class="string">'add_drivers+="virtio_blk"'</span> &gt;/etc/dracut.<span class="keyword">conf</span>.d/force-vitio_blk-<span class="keyword">to</span>-ensure-boot.<span class="keyword">conf</span></span><br></pre></td></tr></table></figure>
