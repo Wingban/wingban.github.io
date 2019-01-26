@@ -70,15 +70,6 @@
     </entry>
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    <entry>
       <title>suibi</title>
       <link href="/suibi/index.html"/>
       <url>/suibi/index.html</url>
@@ -100,6 +91,15 @@
       <title>tools</title>
       <link href="/tools/index.html"/>
       <url>/tools/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
