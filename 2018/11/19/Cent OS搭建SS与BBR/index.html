@@ -14,8 +14,8 @@
 
 <script>
     (function(){
-        if('181119'){
-            if (prompt('请输入文章密码') !== '181119'){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
                 alert('密码错误！');
                 history.back();
             }
@@ -23,6 +23,13 @@
     })();
 </script>
 
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -78,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="Shadowsocks,vps,Linux," />
+  <meta name="keywords" content="Shadowsocks,Linux,技术," />
 
 
 
@@ -91,18 +98,18 @@
 
 
 
-<meta name="description" content="CentOS安装shadowsocks tips: 想直接动手，请跳到最后 1. 用pip安装：1[root@OffbeatEdible-VM ~]#pip install shadowsocks 如果提示：-bash: pip: command not found, 就是还没有安装pip,则 使用yum进行安装:1[root@OffbeatEdible-VM ~]#yum install pyt">
-<meta name="keywords" content="Shadowsocks,vps,Linux">
+<meta name="description" content="CentOS安装shadowsocks tip: 想直接动手，请跳到最后 1. 用pip安装：1[root@OffbeatEdible-VM ~]#pip install shadowsocks 如果提示：-bash: pip: command not found, 就是还没有安装pip,则 使用yum进行安装:1[root@OffbeatEdible-VM ~]#yum install pyth">
+<meta name="keywords" content="Shadowsocks,Linux,技术">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Cent OS搭建SS与BBR">
 <meta property="og:url" content="https://wingban.github.io/2018/11/19/Cent OS搭建SS与BBR/index.html">
 <meta property="og:site_name" content="Wingban的博客">
-<meta property="og:description" content="CentOS安装shadowsocks tips: 想直接动手，请跳到最后 1. 用pip安装：1[root@OffbeatEdible-VM ~]#pip install shadowsocks 如果提示：-bash: pip: command not found, 就是还没有安装pip,则 使用yum进行安装:1[root@OffbeatEdible-VM ~]#yum install pyt">
+<meta property="og:description" content="CentOS安装shadowsocks tip: 想直接动手，请跳到最后 1. 用pip安装：1[root@OffbeatEdible-VM ~]#pip install shadowsocks 如果提示：-bash: pip: command not found, 就是还没有安装pip,则 使用yum进行安装:1[root@OffbeatEdible-VM ~]#yum install pyth">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-25T02:52:15.507Z">
+<meta property="og:updated_time" content="2019-01-27T12:17:39.033Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Cent OS搭建SS与BBR">
-<meta name="twitter:description" content="CentOS安装shadowsocks tips: 想直接动手，请跳到最后 1. 用pip安装：1[root@OffbeatEdible-VM ~]#pip install shadowsocks 如果提示：-bash: pip: command not found, 就是还没有安装pip,则 使用yum进行安装:1[root@OffbeatEdible-VM ~]#yum install pyt">
+<meta name="twitter:description" content="CentOS安装shadowsocks tip: 想直接动手，请跳到最后 1. 用pip安装：1[root@OffbeatEdible-VM ~]#pip install shadowsocks 如果提示：-bash: pip: command not found, 就是还没有安装pip,则 使用yum进行安装:1[root@OffbeatEdible-VM ~]#yum install pyth">
 
 
 
@@ -368,6 +375,18 @@
 
           
           
+             <span id="/2018/11/19/Cent OS搭建SS与BBR/" class="leancloud_visitors" data-flag-title="Cent OS搭建SS与BBR">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+                 
+             </span>
+          
 
           
 
@@ -419,7 +438,7 @@
       
 
       
-        <h1 id="CentOS安装shadowsocks"><a href="#CentOS安装shadowsocks" class="headerlink" title="CentOS安装shadowsocks "></a>CentOS安装shadowsocks <span id="详细版"></span></h1><p>tips: 想直接动手，请<a href="#简短版">跳到最后</a></p>
+        <h1 id="CentOS安装shadowsocks"><a href="#CentOS安装shadowsocks" class="headerlink" title="CentOS安装shadowsocks "></a>CentOS安装shadowsocks <span id="详细版"></span></h1><p>tip: 想直接动手，请<a href="#精简版">跳到最后</a></p>
 <h3 id="1-用pip安装："><a href="#1-用pip安装：" class="headerlink" title="1. 用pip安装："></a>1. 用pip安装：</h3><figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root<span class="symbol">@OffbeatEdible</span>-VM ~]<span class="meta">#pip install shadowsocks</span></span><br></pre></td></tr></table></figure>
 <p>如果提示：<br><code>-bash: pip: command not found</code>, 就是还没有安装pip,则 使用yum进行安装:<br><figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root<span class="symbol">@OffbeatEdible</span>-VM ~]<span class="meta">#yum install python-pip</span></span><br></pre></td></tr></table></figure></p>
 <p><strong>but, 出现了 Error :</strong><br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[root@OffbeatEdible-VM ~]# yum install python-pip</span><br><span class="line">Loaded plugins: fastestmirror</span><br><span class="line">Loading<span class="built_in"> mirror </span>speeds <span class="keyword">from</span> cached hostfile</span><br><span class="line"> * base: mirror.fileplanet.com</span><br><span class="line"> * extras: mirrors.usc.edu</span><br><span class="line"> * updates: mirrors.usc.edu</span><br><span class="line"><span class="literal">No</span> package python-pip available.</span><br><span class="line">Error: <span class="literal">Nothing</span> <span class="keyword">to</span> <span class="keyword">do</span></span><br></pre></td></tr></table></figure></p>
@@ -490,10 +509,14 @@
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#显示结果：类似于：net<span class="selector-class">.ipv4</span><span class="selector-class">.tcp_congestion_control</span> = bbr</span><br><span class="line">net<span class="selector-class">.core</span><span class="selector-class">.default_qdisc</span></span><br><span class="line">net<span class="selector-class">.ipv4</span><span class="selector-class">.tcp_congestion_control</span> = bbr</span><br><span class="line">net<span class="selector-class">.core</span><span class="selector-class">.default_qdisc</span> = fq</span><br></pre></td></tr></table></figure>
 <p><strong>ok,done.</strong></p>
 <ul>
-<li><strong>若重启后无法登入系统，VNC连接查看屏幕提示“FATAL: Module scsi_wait_scan not found”。</strong></li>
+<li>若重启后无法登入系统，VNC连接查看屏幕提示“FATAL: Module scsi_wait_scan not found”。</li>
 </ul>
 <p><strong>解决方法（未实测）：</strong></p>
-<h2 id="控制台中重启系统，重启过程中不断的尝试使用VNC连接，当连接成功且刚读秒时，按键盘的箭头↓键选择旧的内核。旧的内核可以正常启动，登入，重新开始创建force-vitio-blk-to-ensure-boot-conf"><a href="#控制台中重启系统，重启过程中不断的尝试使用VNC连接，当连接成功且刚读秒时，按键盘的箭头↓键选择旧的内核。旧的内核可以正常启动，登入，重新开始创建force-vitio-blk-to-ensure-boot-conf" class="headerlink" title="控制台中重启系统，重启过程中不断的尝试使用VNC连接，当连接成功且刚读秒时，按键盘的箭头↓键选择旧的内核。旧的内核可以正常启动，登入，重新开始创建force-vitio_blk-to-ensure-boot.conf"></a>控制台中重启系统，重启过程中不断的尝试使用VNC连接，当连接成功且刚读秒时，按键盘的箭头↓键选择旧的内核。旧的内核可以正常启动，登入，重新开始创建force-vitio_blk-to-ensure-boot.conf</h2><h1 id="简短版："><a href="#简短版：" class="headerlink" title="简短版："></a><span id="简短版">简短版：</span></h1><p>详细版请<a href="#详细版">回到顶部</a><br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#安装shadowsocks &lt;-- 升级pip &lt;-- 安装python-pip</span></span><br><span class="line">yum -y <span class="keyword">install</span> epel-release</span><br><span class="line">yum <span class="keyword">install</span> python-pip</span><br><span class="line">pip <span class="keyword">install</span> --upgrade pip</span><br><span class="line">pip <span class="keyword">install</span> shadowsocks</span><br><span class="line">vi /etc/shadowsocks.json</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>控制台中重启系统，重启过程中不断的尝试使用VNC连接，当连接成功且刚读秒时，按键盘的箭头↓键选择旧的内核。旧的内核可以正常启动，登入，重新开始创建force-vitio_blk-to-ensure-boot.conf </li>
+</ul>
+<hr>
+<h1 id="精简版："><a href="#精简版：" class="headerlink" title="精简版："></a><span id="精简版">精简版：</span></h1><p>详细版请<a href="#详细版">回到顶部</a><br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#安装shadowsocks &lt;-- 升级pip &lt;-- 安装python-pip</span></span><br><span class="line">yum -y <span class="keyword">install</span> epel-release</span><br><span class="line">yum <span class="keyword">install</span> python-pip</span><br><span class="line">pip <span class="keyword">install</span> --upgrade pip</span><br><span class="line">pip <span class="keyword">install</span> shadowsocks</span><br><span class="line">vi /etc/shadowsocks.json</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># 多用户：</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="string">"server"</span>:<span class="string">"0.0.0.0"</span>,</span><br><span class="line">    <span class="string">"port_password"</span>: &#123;</span><br><span class="line">    <span class="string">"8888"</span>: <span class="string">"password"</span>,</span><br><span class="line">    <span class="string">"8889"</span>: <span class="string">"password"</span>,</span><br><span class="line">    <span class="string">"8890"</span>: <span class="string">"password"</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">"timeout"</span>:<span class="number">300</span>,</span><br><span class="line">        <span class="string">"method"</span>: <span class="string">"rc4-md5"</span>,</span><br><span class="line">        <span class="string">"fast_open"</span>: <span class="literal">false</span></span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
 <p><strong>保存退出： <code>：wq</code></strong><br><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 开启sserver服务</span></span><br><span class="line">ssserver -c <span class="string">/etc/shadowsocks.json</span> -d start</span><br><span class="line"><span class="comment"># CentOS 7默认使用的是firewall，修改防火墙规则：</span></span><br><span class="line">firewall-cmd <span class="params">--permanent</span> <span class="params">--zone=public</span> <span class="params">--add-port=</span>需要加入的端口<span class="string">/tcp</span></span><br><span class="line">firewall-cmd <span class="params">--permanent</span> <span class="params">--zone=public</span> <span class="params">--add-port=</span>需要加入的端口<span class="string">/udp</span></span><br><span class="line"><span class="comment"># 重启防火墙</span></span><br><span class="line">firewall-cmd <span class="params">--reload</span></span><br></pre></td></tr></table></figure></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 配置开机启动服务，编辑/etc/rc.local文件：</span></span><br><span class="line">vi /etc/rc.local</span><br><span class="line"><span class="meta">#</span><span class="bash"> 加入ss的启动命令：</span></span><br><span class="line">sudo ssserver -c /etc/shadowsocks.json</span><br><span class="line"><span class="meta">#</span><span class="bash"> 赋予可执行权限：</span></span><br><span class="line">chmod +x /etc/rc.local</span><br><span class="line"><span class="meta">#</span><span class="bash"> 重启测试：</span></span><br><span class="line">reboot</span><br></pre></td></tr></table></figure>
@@ -507,7 +530,6 @@
 <li>不知道自己新内核版本号的话，用命令： <code>ls /lib/modules/</code> 查看<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dracut -f <span class="string">/boot/initramfs-</span>你的新内核的版本号<span class="string">.img</span> 新内核的版本号</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p><strong>本文 完。</strong></p>
 
       
     </div>
@@ -519,7 +541,7 @@
     
       <div>
     
-        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束-------------</div>
     
 </div>
       
@@ -537,9 +559,9 @@
           
             <a href="/tags/Shadowsocks/" rel="tag"># Shadowsocks</a>
           
-            <a href="/tags/vps/" rel="tag"># vps</a>
-          
             <a href="/tags/Linux/" rel="tag"># Linux</a>
+          
+            <a href="/tags/技术/" rel="tag"># 技术</a>
           
         </div>
       
@@ -659,7 +681,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -699,7 +721,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CentOS安装shadowsocks"><span class="nav-number">1.</span> <span class="nav-text">CentOS安装shadowsocks </span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-用pip安装："><span class="nav-number">1.0.1.</span> <span class="nav-text">1. 用pip安装：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-手动修改shadowsocks配置文件"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. 手动修改shadowsocks配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-指定配置文件启动-shadowsocks-服务"><span class="nav-number">1.0.3.</span> <span class="nav-text">3. 指定配置文件启动 shadowsocks 服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-服务加入开机自启动"><span class="nav-number">1.0.4.</span> <span class="nav-text">4. 服务加入开机自启动</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#至此，如无意外，shadowsocks已经可以使用。"><span class="nav-number">1.1.</span> <span class="nav-text">至此，如无意外，shadowsocks已经可以使用。</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#centos安装bbr加速"><span class="nav-number">2.</span> <span class="nav-text">centos安装bbr加速</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#控制台中重启系统，重启过程中不断的尝试使用VNC连接，当连接成功且刚读秒时，按键盘的箭头↓键选择旧的内核。旧的内核可以正常启动，登入，重新开始创建force-vitio-blk-to-ensure-boot-conf"><span class="nav-number">2.1.</span> <span class="nav-text">控制台中重启系统，重启过程中不断的尝试使用VNC连接，当连接成功且刚读秒时，按键盘的箭头↓键选择旧的内核。旧的内核可以正常启动，登入，重新开始创建force-vitio_blk-to-ensure-boot.conf</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#简短版："><span class="nav-number">3.</span> <span class="nav-text">简短版：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CentOS安装shadowsocks"><span class="nav-number">1.</span> <span class="nav-text">CentOS安装shadowsocks </span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-用pip安装："><span class="nav-number">1.0.1.</span> <span class="nav-text">1. 用pip安装：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-手动修改shadowsocks配置文件"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. 手动修改shadowsocks配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-指定配置文件启动-shadowsocks-服务"><span class="nav-number">1.0.3.</span> <span class="nav-text">3. 指定配置文件启动 shadowsocks 服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-服务加入开机自启动"><span class="nav-number">1.0.4.</span> <span class="nav-text">4. 服务加入开机自启动</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#至此，如无意外，shadowsocks已经可以使用。"><span class="nav-number">1.1.</span> <span class="nav-text">至此，如无意外，shadowsocks已经可以使用。</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#centos安装bbr加速"><span class="nav-number">2.</span> <span class="nav-text">centos安装bbr加速</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#精简版："><span class="nav-number">3.</span> <span class="nav-text">精简版：</span></a></li></ol></div>
             
 
           </div>
@@ -719,10 +741,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js••"></script>
-
-<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -740,11 +759,6 @@
   
 </div>
 
-<div class="powered-by">
-<i class="fa fa-user-md"></i><span id="busuanzi_container_site_pv">
-  本站访客数:<span id="busuanzi_value_site_pv"></span>
-</span>
-</div>
 
 
 
@@ -1239,6 +1253,113 @@
 
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("", "");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
