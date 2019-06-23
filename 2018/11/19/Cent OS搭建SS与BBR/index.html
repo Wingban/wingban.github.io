@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="Wingban的博客">
 <meta property="og:description" content="CentOS安装shadowsocks tip: 想直接动手，请跳到最后 1. 用pip安装：1[root@OffbeatEdible-VM ~]#pip install shadowsocks 如果提示：-bash: pip: command not found, 就是还没有安装pip,则 使用yum进行安装:1[root@OffbeatEdible-VM ~]#yum install pyth">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-27T12:17:39.033Z">
+<meta property="og:updated_time" content="2019-06-23T08:47:27.611Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Cent OS搭建SS与BBR">
 <meta name="twitter:description" content="CentOS安装shadowsocks tip: 想直接动手，请跳到最后 1. 用pip安装：1[root@OffbeatEdible-VM ~]#pip install shadowsocks 如果提示：-bash: pip: command not found, 就是还没有安装pip,则 使用yum进行安装:1[root@OffbeatEdible-VM ~]#yum install pyth">
@@ -472,7 +472,7 @@
 </ul>
 <p>保存配置、重启防火墙的命令：<br><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta-keyword">/etc/</span>init.d/iptables save</span><br><span class="line"><span class="meta-keyword">/etc/</span>init.d/iptables restart</span><br></pre></td></tr></table></figure></p>
 <ul>
-<li>CentOS 7默认使用的是firewall，开放端口命令为:<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ifirewall-cmd <span class="params">--permanent</span> <span class="params">--zone=public</span> <span class="params">--add-port=</span>需要加入的端口<span class="string">/tcp</span></span><br><span class="line">firewall-cmd <span class="params">--permanent</span> <span class="params">--zone=public</span> <span class="params">--add-port=</span>需要加入的端口<span class="string">/udp</span></span><br></pre></td></tr></table></figure>
+<li>CentOS 7默认使用的是firewall，开放端口命令为:<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd <span class="params">--permanent</span> <span class="params">--zone=public</span> <span class="params">--add-port=</span>需要加入的端口<span class="string">/tcp</span></span><br><span class="line">firewall-cmd <span class="params">--permanent</span> <span class="params">--zone=public</span> <span class="params">--add-port=</span>需要加入的端口<span class="string">/udp</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p>重启防火墙的命令：<br><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-<span class="keyword">cmd</span><span class="bash"> --reload</span></span><br></pre></td></tr></table></figure></p>
